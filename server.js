@@ -1,7 +1,7 @@
 const { Server } = require("socket.io");
 
-const io = new Server(process.env.PORT || 3002, {
-  cors: { origin: "https://task-board-gilt-xi.vercel.app/" }
+const io = new Server(3002, {
+  cors: { origin: "*" }
 });
 
 let board = {
